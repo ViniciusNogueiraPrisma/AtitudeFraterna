@@ -1,0 +1,224 @@
+.table {
+  table-layout: fixed;
+
+  thead {
+    tr {
+      border-bottom: 1px solid var(--text-color-main);
+
+      th {
+        vertical-align: middle;
+        width: 50%;
+        text-align: start !important;
+        padding: 8px 12px;
+        color: var(--table-content-header-default, #fff);
+        font-family: var(--font-family-body, "Open Sans");
+        font-size: var(--Font-size-medium, 14px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 124%;
+
+        &::after {
+          font-size: 20px;
+        }
+
+        &:before {
+          font-size: 20px;
+        }
+
+        span {
+          font-weight: 400;
+          display: block;
+        }
+
+        &:not(:first-child) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  tbody {
+    border-top: none !important;
+
+    tr.odd {
+      td {
+        box-shadow: unset !important;
+      }
+    }
+
+    tr.even {
+      td {
+        box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.05) !important;
+      }
+    }
+
+    tr {
+      border-bottom: 1px solid var(--text-grey-scale-02);
+
+      td {
+        width: 50%;
+        text-align: start !important;
+        vertical-align: middle;
+        border: none;
+        padding: 16px 12px;
+
+        color: var(--table-content-text-default, #1a1a1a);
+        font-family: var(--font-family-body, "Open Sans");
+        font-size: var(--Font-size-large, 16px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 124%;
+
+        a {
+          text-decoration: none;
+          color: var(--table-content-text-default, #1a1a1a);
+          font-family: var(--font-family-body, "Open Sans");
+          font-size: var(--Font-size-large, 16px);
+          font-style: normal;
+          font-weight: 400;
+          line-height: 124%;
+        }
+
+        img {
+          margin: 0 auto;
+          width: 32px;
+
+          // filter: brightness(0) invert(53%) sepia(12%) saturate(531%) hue-rotate(179deg) brightness(103%)
+          //     contrast(93%);
+        }
+
+        &.not-active {
+          a {
+            cursor: default;
+          }
+          img {
+            opacity: 0.5;
+          }
+        }
+
+        &:not(:first-child) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.table-no-borders {
+  tr {
+    td,
+    th {
+      padding: 12px 8px;
+      font-size: rem(14);
+    }
+
+    th {
+      font-weight: 700;
+    }
+  }
+}
+
+.table-accordion-adm {
+  thead {
+    tr {
+      th {
+        &:not(:first-child, :nth-child(2)) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        cursor: pointer;
+      }
+
+      td {
+        &:first-child {
+          span {
+            font-size: rem(30px);
+            color: var(--text-primary-01-var-1);
+          }
+        }
+
+        &:not(:nth-child(2)) {
+          text-align: center;
+        }
+      }
+
+      &.accordion-collapse {
+        td {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.table {
+  margin-top: 16px;
+
+  thead {
+    border-bottom: 1px solid var(--colors-grey-90, #f7f7f7);
+    background: var(--colors-grey-80, #ebebeb);
+
+    tr {
+      border: 1px solid white !important;
+    }
+  }
+}
+
+.table {
+  tr {
+    td {
+      p {
+        color: var(--text-body-large, #383838);
+        font-family: var(--font-family-body, "Open Sans");
+        font-size: var(--font-font-size-font-size-body-large, 16px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(
+          --font-line-height-font-size-body-large,
+          26px
+        ); /* 162.5% */
+      }
+    }
+  }
+}
+
+.table-central {
+  thead {
+    tr {
+      th {
+        // width: 300px !important;
+
+        @media (max-width: 1462px) {
+          width: 300px !important;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        width: 300px !important;
+      }
+    }
+  }
+
+  img {
+    margin: unset !important;
+  }
+
+  .block-link {
+    width: 100%;
+    cursor: help;
+
+    img {
+      opacity: 0.2;
+    }
+  }
+}

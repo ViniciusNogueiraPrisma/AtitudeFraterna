@@ -1,0 +1,114 @@
+[data-theme="dark"] {
+  background-color: #1d1d1d;
+
+  // Font Family
+
+  // Text Colors
+
+  --text-color: #ffffff;
+
+  --text-white: #ffffff;
+  --text-black: #ffffff;
+
+  --text-primary-01-default: #ffffff;
+  --text-primary-01-var-1: #ffffff;
+  --text-primary-01-var-2: #ffffff;
+
+  --text-secondary-01-default: #ffffff;
+  --text-secondary-01-var-1: #ffffff;
+  --text-secondary-01-var-2: #ffffff;
+
+  --text-grey-scale-00: #ffffff;
+  --text-grey-scale-01: #ffffff;
+  --text-grey-scale-02: #ffffff;
+  --text-grey-scale-03: #ffffff;
+  --text-grey-scale-04: #ffffff;
+  --text-grey-scale-05: #ffffff;
+
+  --text-grey-scale-c4: #ffffff;
+
+  --text-disabled: #ffffff;
+
+  // Solid Colors
+
+  --pure-white: #1d1d1d;
+  --pure-black: #1d1d1d;
+
+  --primary-01-default: #1d1d1d;
+  --primary-01-var-1: #1d1d1d;
+  --primary-01-var-2: #1d1d1d;
+
+  --secondary-01-default: #1d1d1d;
+  --secondary-01-var-1: #1d1d1d;
+  --secondary-01-var-2: #1d1d1d;
+
+  --grey-scale-00: #1d1d1d;
+  --grey-scale-01: #1d1d1d;
+  --grey-scale-02: #1d1d1d;
+  --grey-scale-03: #1d1d1d;
+  --grey-scale-04: #1d1d1d;
+  --grey-scale-05: #1d1d1d;
+  --grey-scale-06: #1d1d1d;
+  --grey-scale-07: #1d1d1d;
+  --grey-scale-F2F2: #1d1d1d;
+  --system-disabled: #bfbfbf;
+  --system-link: #1a0dab;
+  --system-link-visited: #1b1466;
+  --system-negative: #d23a20;
+  --system-alert: #ecb307;
+  --system-positive: #1e986f;
+
+  .acessibillity-bar .content .right-top-header .accessibility-tools > a small {
+    color: white;
+  }
+
+  .icon-aumentar-fonte:before {
+    filter: invert(1);
+  }
+
+  .icon-diminuir-fonte:before {
+    filter: invert(1);
+  }
+
+  footer .first-line-footer .menu-footer .list-menu h5 {
+    color: white;
+  }
+
+  footer .first-line-footer .menu-footer .list-menu a {
+    color: white;
+  }
+
+  footer .first-line-footer .infos-footer .infos-list h5 {
+    color: white;
+  }
+
+  footer .first-line-footer .infos-footer .infos-list a {
+    color: white;
+  }
+
+  .selo-b3 {
+    img {
+      filter: invert(1) brightness(1.5);
+    }
+  }
+
+  footer .second-line-footer .itens-second-line a {
+    color: white;
+  }
+
+  footer .second-line-footer .itens-second-line .poli-footer span {
+    color: white;
+  }
+
+  footer .second-line-footer .itens-second-line .prisma-footer {
+    filter: invert(1);
+  }
+
+  footer {
+    background-color: #1d1d1d;
+  }
+
+  footer .second-line-footer {
+    background-color: #1d1d1d;
+  }
+}

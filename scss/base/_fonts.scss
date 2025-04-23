@@ -1,0 +1,129 @@
+@font-face {
+  font-family: Epilogue;
+  src: url("../../fonts/Epilogue/Epilogue-Thin.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Epilogue;
+  src: url("../../fonts/Epilogue/Epilogue-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Epilogue;
+  src: url("../../fonts/Epilogue/Epilogue-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Epilogue;
+  src: url("../../fonts/Epilogue/Epilogue-Medium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Epilogue;
+  src: url("../../fonts/Epilogue/Epilogue-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Epilogue;
+  src: url("../../fonts/Epilogue/Epilogue-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Epilogue;
+  src: url("../../fonts/Epilogue/") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muthiara";
+  src: url("../../fonts/muthiara/Muthiara.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon/icomoon.eot?8yr2di");
+  src: url("../fonts/icomoon/icomoon.eot?8yr2di#iefix")
+      format("embedded-opentype"),
+    url("../fonts/icomoon/icomoon.ttf?8yr2di") format("truetype"),
+    url("../fonts/icomoon/icomoon.woff?8yr2di") format("woff"),
+    url("../fonts/icomoon/icomoon.svg?8yr2di#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-aumentar-fonte:before {
+  content: url(../../images/aumentar-fonte.svg);
+  color: #ffffff;
+  filter: invert(1);
+}
+.icon-arrow-down:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-arrow-left:before {
+  content: "\e901";
+  color: #4d4d4d;
+}
+.icon-arrow-right:before {
+  content: "\e902";
+  color: #1358bf;
+}
+.icon-busca:before {
+  content: "\e903";
+  color: #000000;
+  font-weight: 900;
+}
+.icon-contraste:before {
+  content: "\e904";
+  color: #ffffff;
+}
+.icon-diminuir-fonte:before {
+  // content: "\e905";
+  content: url(../../images/diminuir-fonte.svg);
+  color: #ffffff;
+  filter: invert(1);
+}
+.icon-exibir:before {
+  content: "\e906";
+  // color: #fff;
+  color: #ffffff;
+  font-weight: 700;
+}
+.icon-alerts:before {
+  content: "\e907";
+  color: #fff;
+}
+.icon-site:before {
+  content: "\e908";
+  color: #fff;
+}
