@@ -884,7 +884,7 @@ footer {
 
           .box {
             flex: 1;
-            
+
             h3 {
               margin: 0;
               padding: 0;
@@ -911,6 +911,24 @@ footer {
           }
         }
       }
+    }
+  }
+
+  .copy {
+    margin-top: 32px;
+    padding: 32px 0px;
+    border-bottom: 1px solid var(--Foundation-Green-green-50, #e6f1ec);
+
+    h3 {
+      margin: 0;
+      padding: 0;
+
+      color: var(--Foundation-Grey-grey-300, #757373);
+      font-family: Epilogue;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 125% */
     }
   }
 }
