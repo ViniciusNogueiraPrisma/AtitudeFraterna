@@ -18,17 +18,22 @@ h5,
 .h5,
 h6,
 .h6 {
-  color: var(--text-secondary-01-default);
+  color: var(--Foundation-Green-green-800, #003f23);
+  font-family: Epilogue;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 125% */
 }
 
 h2,
 .h2 {
-  color: var(--semantic-accent-primary, #095534);
-  font-family: var(--font-family-titles, Epilogue);
-  font-size: var(--Font-size-H2, 38px);
+  color: var(--Foundation-Green-green-800, #003f23);
+  font-family: Epilogue;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 600;
-  line-height: var(--Font-line-height-H2, 50px);
+  font-weight: 400;
+  line-height: 40px; /* 125% */
 }
 
 .me-3 {
@@ -154,7 +159,7 @@ p,
   font-style: normal;
   font-weight: 400;
   line-height: var(--Font-line-height-large, 26px);
-  
+
   &:not(:last-of-type) {
     margin-bottom: 24px;
   }

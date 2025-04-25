@@ -68,14 +68,16 @@
             </div>
 
             <div class="navigation-page">
-              <a href="#">Quem Somos</a>
-              <a href="#">Ações</a>
-              <a href="#">Blog</a>
-              <a href="#">Contato</a>
+              <a href="quem-somos.html">Quem Somos</a>
+              <a href="acoes.html">Ações</a>
+              <a href="interna-blog.html">Blog</a>
+              <a href="fale-conosco.html">Contato</a>
             </div>
 
             <div class="search">
-              <a href="#" class="link-cont">Quero Contribuir</a>
+              <a href="quero-contribuir.html" class="link-cont"
+                >Quero Contribuir</a
+              >
             </div>
           </div>
         </div>
@@ -88,7 +90,10 @@
           <div class="swiper-slide">
             <img src="images/bg-home.jpg" alt="" />
           </div>
-          <div class="swiper-slide">Slide 2</div>
+
+          <div class="swiper-slide">
+            <img src="images/bg-juntos.jpg" alt="" />
+          </div>
         </div>
 
         <div class="container-texts-slide">
@@ -470,6 +475,29 @@
       <video src="videos/home.mp4" autoplay muted no-controller></video>
     </div>
 
+    <div
+      class="modal fade"
+      id="modalVideo"
+      tabindex="-1"
+      aria-labelledby="modalVideoLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-home">
+          <div class="close-modal">
+            <a
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></a>
+          </div>
+
+          <video id="videoPlayer" src="videos/home.mp4" controls></video>
+        </div>
+      </div>
+    </div>
+
     <div class="juntos-home">
       <div class="container-texts-juntos">
         <div class="container-images-juntos">
@@ -585,6 +613,5 @@
     <script defer src="vendor/slick.min.js"></script>
     <script defer src="js/zoomScroll.js"></script>
     <script defer src="js/main.js"></script>
-    <script defer src="../js/Master.js"></script>
   </body>
 </html>
