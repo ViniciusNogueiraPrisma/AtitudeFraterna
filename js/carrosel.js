@@ -29,3 +29,33 @@ document.addEventListener("DOMContentLoaded", function () {
   checkWidth();
   window.addEventListener("resize", checkWidth);
 });
+
+var swiper = new Swiper(".mySwiper-quem-somos", {
+  slidesPerView: "auto",
+  spaceBetween: 16,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+var swiper = new Swiper(".mySwiper-aulas", {
+  slidesPerView: "auto",
+  spaceBetween: 12,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+var swiper = new Swiper(".mySwiper-others-pub", {
+  slidesPerView: "auto",
+  spaceBetween: 32,
+
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+});

@@ -28,14 +28,63 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(changeWord, 3000);
 });
 
-$(".toggle-mobile-menu").click(function () {
-  $(".mobile-menu-div").toggleClass("active");
-  $(".header").toggleClass("open-menu");
-  $("body").toggleClass("open-menu");
+// menu unico
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger-menu");
+  const body = document.querySelector("body");
+
+  const mobileMenuContainer = document.createElement("div");
+  mobileMenuContainer.className = "mobile-menu-container";
+
+  const closeButtonContainer = document.createElement("div");
+  closeButtonContainer.className = "mobile-menu-close-container";
+
+  const closeButton = document.createElement("button");
+  closeButton.className = "mobile-menu-close";
+  closeButton.innerHTML = "";
+  closeButtonContainer.appendChild(closeButton);
+
+  mobileMenuContainer.appendChild(closeButtonContainer);
+
+  const navigationClone = document
+    .querySelector(".navigation-page")
+    .cloneNode(true);
+  const searchClone = document.querySelector(".search").cloneNode(true);
+
+  mobileMenuContainer.appendChild(navigationClone);
+  mobileMenuContainer.appendChild(searchClone);
+
+  body.appendChild(mobileMenuContainer);
+
+  hamburger.addEventListener("click", function () {
+    body.classList.toggle("mobile-menu-open");
+  });
+
+  closeButton.addEventListener("click", function () {
+    body.classList.remove("mobile-menu-open");
+  });
+
+  document.addEventListener("click", function (event) {
+    if (
+      !event.target.closest(".hamburger-menu") &&
+      !event.target.closest(".mobile-menu-container") &&
+      body.classList.contains("mobile-menu-open")
+    ) {
+      body.classList.remove("mobile-menu-open");
+    }
+  });
 });
 
-$(".button-mapa-site").click((e) => {
-  $(".button-mapa-site").toggleClass("active");
+// tooltip qs
+var tooltipTriggerList = [].slice.call(
+  document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl, {
+    template:
+      '<div class="tooltip custom-tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>',
+    customClass: "custom-tooltip",
+  });
 });
 
 AOS.init({

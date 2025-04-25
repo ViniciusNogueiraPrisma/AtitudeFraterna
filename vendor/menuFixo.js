@@ -11,7 +11,6 @@ function debounce(callback, delay) {
 
 let offset = 0;
 const header = document.querySelector(".headerFixoMenu");
-const topBar = header.querySelector(".acessibillity-bar");
 const headerMenu = header.querySelector(".header");
 
 function menuFixo() {
@@ -22,10 +21,8 @@ function menuFixo() {
   const scrollThreshold = 10;
 
   if (scrollTop >= headerHeight) {
-    topBar.classList.add("fixed");
     headerMenu.classList.add("fixed");
   } else {
-    topBar.classList.remove("fixed");
     headerMenu.classList.remove("fixed");
   }
 
@@ -48,7 +45,6 @@ function menuFixo() {
 
   if (scrollTop === 0) {
     header.classList.remove("menu-bar");
-    topBar.classList.remove("fixed");
     headerMenu.classList.remove("fixed");
     header.style.top = `0px`;
   }
