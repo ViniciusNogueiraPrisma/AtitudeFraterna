@@ -256,6 +256,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 48px;
+    overflow: hidden;
 
     @media (max-width: 1199px) {
       max-width: 991px;
@@ -827,6 +828,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 48px;
+    overflow: hidden;
 
     @media (max-width: 1199px) {
       display: flex;
@@ -1711,6 +1713,7 @@ footer {
       gap: 80px;
       margin-top: 24px;
       padding-bottom: 100px;
+      overflow: hidden;
 
       @media (max-width: 991px) {
         flex-direction: column;
@@ -2004,6 +2007,7 @@ footer {
     align-items: center;
     gap: 32px;
     margin-bottom: 80px;
+    overflow: hidden;
 
     @media (max-width: 1199px) {
       flex-direction: column;
