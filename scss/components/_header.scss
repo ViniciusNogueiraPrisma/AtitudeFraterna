@@ -4,31 +4,6 @@
   justify-content: space-between;
 
   &.fixed {
-    border-bottom: 1px solid #eaeaea;
-    background: #fff;
-    backdrop-filter: blur(10px);
-
-    .itens-header {
-      .navigation-page {
-        a {
-          color: #5a5858;
-
-          &::after {
-            background-color: #5a5858;
-          }
-        }
-      }
-
-      .logo {
-        img {
-          filter: unset !important;
-        }
-      }
-    }
-
-    .hamburger-menu span {
-      background-color: black;
-    }
   }
 }
 
@@ -191,34 +166,72 @@
 
 .menu-bar {
   position: fixed !important;
+  border-bottom: 1px solid #eaeaea;
+  background: #fff;
+  backdrop-filter: blur(10px);
+
+  .itens-header {
+    .navigation-page {
+      a {
+        color: #5a5858;
+
+        &::after {
+          background-color: #5a5858;
+        }
+      }
+    }
+
+    .logo {
+      img {
+        filter: unset;
+      }
+    }
+  }
+
+  .hamburger-menu span {
+    background-color: black;
+  }
 }
 
 .headerFixoMenu.menu-bar {
   &:not(.not-transparent) {
     .acessibillity-bar {
-      .content {
-        span {
-          color: var(--text-color);
-
-          &::before {
-            color: var(--text-color);
-          }
-        }
-
-        p {
-          color: var(--text-color) !important;
-
-          &::after {
-            background-color: var(--text-color) !important;
-          }
-        }
+      .institucional {
+        color: #000;
 
         a {
-          color: var(--text-color) !important;
+          color: #000;
+        }
 
-          small {
-            color: var(--text-color) !important;
+        .dropdown {
+          .dropdown-item {
+            color: white;
           }
+        }
+      }
+
+      .accessibility-tools {
+        a,
+        small {
+          color: black;
+        }
+
+        .icon-contraste:before {
+          color: #000;
+        }
+
+        .icon-aumentar-fonte:before {
+          filter: unset;
+        }
+
+        .icon-diminuir-fonte:before {
+          filter: unset;
+        }
+      }
+
+      .linguagem {
+        a {
+          color: #000;
         }
       }
     }
@@ -233,7 +246,7 @@
   }
 
   .header {
-    background-color: var(--pure-white);
+    // background-color: var(--pure-white);
 
     .content {
       .logo-white {

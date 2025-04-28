@@ -58,57 +58,288 @@
   --system-alert: #ecb307;
   --system-positive: #1e986f;
 
-  .acessibillity-bar .content .right-top-header .accessibility-tools > a small {
-    color: white;
+  .banner-home .swiper-wrapper:before {
+    background: linear-gradient(
+      109deg,
+      rgb(0 0 0 / 73%) 0%,
+      rgba(255, 255, 255, 0) 55%
+    );
   }
 
-  .icon-aumentar-fonte:before {
-    filter: invert(1);
+  .banner-home .swiper-wrapper:after {
+    background: linear-gradient(
+      161deg,
+      rgba(255, 255, 255, 0) 49%,
+      rgb(0 0 0) 100%
+    );
   }
 
-  .icon-diminuir-fonte:before {
-    filter: invert(1);
+  .link-cont {
+    background-color: #1d1d1d;
+    border: 1px solid #1d1d1d;
   }
 
-  footer .first-line-footer .menu-footer .list-menu h5 {
-    color: white;
-  }
-
-  footer .first-line-footer .menu-footer .list-menu a {
-    color: white;
-  }
-
-  footer .first-line-footer .infos-footer .infos-list h5 {
-    color: white;
-  }
-
-  footer .first-line-footer .infos-footer .infos-list a {
-    color: white;
-  }
-
-  .selo-b3 {
-    img {
-      filter: invert(1) brightness(1.5);
+  .texts-atitude {
+    span,
+    h2,
+    p {
+      color: white !important;
     }
   }
 
-  footer .second-line-footer .itens-second-line a {
+  .activity-home {
+    background-color: #1d1d1d;
+
+    .title-activity {
+      h3 {
+        color: white;
+      }
+    }
+  }
+
+  .activity-home .swiper-grupo .swiper .swiper-btn {
+    filter: grayscale(1) brightness(5.5);
+  }
+
+  .activity-home
+    .swiper-grupo
+    .swiper
+    .swiper-wrapper
+    .swiper-slide
+    .card-content
+    .last-infos
+    .btn-content
+    a {
+    background-color: #1d1d1d;
+    border: 1px solid #1d1d1d;
+  }
+
+  .juntos-home {
+    .texts-juntos {
+      img {
+        filter: grayscale(1) brightness(1.5);
+      }
+
+      h3 {
+        color: white;
+      }
+
+      p {
+        color: white;
+      }
+
+      a.link-cont {
+        border: 1px solid white;
+      }
+    }
+  }
+
+  footer .itens-footer .newsletter .title-news h3 {
     color: white;
   }
 
-  footer .second-line-footer .itens-second-line .poli-footer span {
+  footer .itens-footer .newsletter .inputs-news a {
+    border: 1px solid white;
+    background-color: #1d1d1d;
+
+    &:hover {
+      background-color: #1d1d1d;
+    }
+  }
+
+  footer .itens-footer .map-footer {
+    background-color: white;
+
+    h4,
+    p,
+    h5,
+    span,
+    a,
+    h3 {
+      color: #000 !important;
+    }
+  }
+
+  .copy {
+    h3 {
+      color: white;
+    }
+  }
+
+  .banner-internal .pagination-banner .itens a {
     color: white;
   }
 
-  footer .second-line-footer .itens-second-line .prisma-footer {
-    filter: invert(1);
+  .banner-internal .pagination-banner .itens .links:last-child a {
+    color: white;
   }
 
-  footer {
+  .banner-internal .main-image:before {
+    background: linear-gradient(
+        90deg,
+        rgba(4, 179, 101, 0) 0%,
+        rgb(0 0 0 / 60%) 111.02%
+      ),
+      linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.38) 100%);
+  }
+
+  .content-texts-qs .title-texts-qs {
+    h5 {
+      color: white;
+    }
+  }
+
+  .content-texts-qs .title-texts-qs .links-texts-qs a {
+    color: white;
+    border: 1px solid white;
+
+    &:after {
+      filter: grayscale(1) brightness(9.5);
+    }
+  }
+
+  .menu-bar .acessibillity-bar .acessibilidade .linguagem {
+    color: black;
+  }
+
+  .menu-bar {
+    .logo {
+      img {
+        filter: grayscale(1) brightness(0.5);
+      }
+    }
+  }
+
+  .content-texts-qs .about-qs {
+    span,
+    h4,
+    h6,
+    h5,
+    p,
+    a {
+      color: white;
+    }
+  }
+
+  .content-texts-qs .team-qs .title-team {
+    span,
+    h3,
+    p {
+      color: white;
+    }
+  }
+
+  .content-texts-qs .team-qs .container-box .box-team .box-person p {
+    color: white;
+  }
+
+  .content-texts-qs .team-qs .container-box .infos-team .box-text {
+    h5,
+    p {
+      color: white;
+    }
+  }
+
+  .juntos-intern {
     background-color: #1d1d1d;
   }
 
-  footer .second-line-footer {
+  .container-box-acoes
+    .box-acoes
+    .box
+    .card-content
+    .last-infos
+    .btn-content
+    a {
     background-color: #1d1d1d;
+  }
+
+  .content-intern {
+    p,
+    h6,
+    li {
+      color: white;
+    }
+  }
+
+  .others-pub .content-others-pub .title-pub {
+    color: white !important;
+  }
+
+  .box-pub .infos-box h3 {
+    color: #000;
+  }
+
+  .box-pub .infos-box .tag {
+    background-color: #000;
+  }
+
+  .container-aulas .video-aulas .texts-aulas {
+    span,
+    h4,
+    p {
+      color: white;
+    }
+  }
+
+  .box-aulas .box h5 {
+    color: #000;
+  }
+
+  .projetos-aula {
+    background-color: #1d1d1d;
+  }
+
+  .projetos-aula
+    .container-content-carrosel
+    .content-carrosel
+    .title-carrosel
+    h3 {
+    color: #fff;
+  }
+
+  .container-pub .title-pub h3 {
+    color: #fff;
+  }
+
+  .container-pub .title-pub .box-filters .box p {
+    color: #fff;
+  }
+
+  .container-contact .second-contact .title-contact h3 {
+    color: #fff;
+  }
+
+  .container-contact .second-contact .title-contact h6 {
+    color: #fff;
+  }
+
+  .container-contact .second-contact .cards-contact .box-contact h3 {
+    color: #fff;
+  }
+
+  .send-link {
+    background-color: #1d1d1d !important;
+    border: 1px solid white !important;
+
+    &:hover {
+      background-color: #1d1d1d !important;
+    }
+  }
+
+  .container-contact .first-contact .box h3 {
+    color: white;
+  }
+
+  .container-contact .first-contact .box .icons-contact .infos .main-infos p {
+    color: white;
+  }
+
+  .container-contact .first-contact .box .icons-contact .infos .main-infos a {
+    color: white;
+  }
+
+  .container-contact .first-contact .box .tick-box p {
+    color: white;
   }
 }
