@@ -2,9 +2,6 @@
   transition: 0.3s;
   display: flex;
   justify-content: space-between;
-
-  &.fixed {
-  }
 }
 
 .toggle-mobile-menu {
@@ -397,15 +394,9 @@
   padding-top: 24px;
 
   @media (max-width: 1199px) {
-    // padding: 20px 0px;
     padding-top: 20px;
     padding-bottom: 20px;
     align-items: center;
-  }
-
-  .logo {
-    img {
-    }
   }
 }
 
@@ -481,7 +472,4 @@
 .div-menu-open {
   display: flex;
   align-items: center;
-
-  .toggle-mobile-menu {
-  }
 }
