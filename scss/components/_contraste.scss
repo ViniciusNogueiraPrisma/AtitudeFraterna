@@ -74,9 +74,26 @@
     );
   }
 
+  .menu-bar {
+    .link-cont {
+      background-color: #000;
+      border: 1px solid #000;
+      color: #fff;
+
+      &:after {
+        filter: grayscale(1) brightness(1);
+      }
+    }
+  }
+
   .link-cont {
-    background-color: #1d1d1d;
-    border: 1px solid #1d1d1d;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #000;
+
+    &:after {
+      filter: grayscale(1) brightness(0);
+    }
   }
 
   .texts-atitude {
@@ -341,5 +358,24 @@
 
   .container-contact .first-contact .box .tick-box p {
     color: white;
+  }
+
+  .accessibility-content {
+    h3 {
+      color: white;
+    }
+
+    p {
+      color: white;
+    }
+
+    a {
+      color: white;
+    }
+
+    ul,
+    li {
+      color: white;
+    }
   }
 }

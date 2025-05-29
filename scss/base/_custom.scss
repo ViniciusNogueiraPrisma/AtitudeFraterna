@@ -63,13 +63,7 @@ ul {
 }
 
 section {
-  padding-top: 80px;
-  padding-bottom: 80px;
-
-  @media (max-width: 767px) {
-    padding-top: 64px;
-    padding-bottom: 64px;
-  }
+  padding: 42px 0px;
 }
 
 img,
@@ -82,7 +76,6 @@ svg {
 .bg-primary-var-1 {
   background-color: var(--primary-01-var-1);
   color: var(--text-white);
-
   h1,
   h2,
   h3,

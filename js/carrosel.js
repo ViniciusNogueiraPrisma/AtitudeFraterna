@@ -5,6 +5,9 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".mySwiper-grupo-home", {
   slidesPerView: "auto",
   spaceBetween: 8,
+  autoplay: {
+    delay: 7000,
+  },
 
   navigation: {
     nextEl: ".swiper-button-next",
@@ -12,22 +15,69 @@ var swiper = new Swiper(".mySwiper-grupo-home", {
   },
 });
 
+// carrosel parceiros home
 document.addEventListener("DOMContentLoaded", function () {
   const scrollWrapper = document.querySelector(".scroll-wrapper");
 
-  function checkWidth() {
-    const wrapperWidth = scrollWrapper.offsetWidth;
-    const containerWidth =
-      document.querySelector(".images-parceiros").offsetWidth;
+  if (scrollWrapper) {
+    const originalGroups = Array.from(
+      scrollWrapper.querySelectorAll(".scroll-group")
+    );
 
-    if (wrapperWidth < containerWidth * 3) {
-      const clone = document.querySelector(".scroll-group").cloneNode(true);
-      scrollWrapper.appendChild(clone);
+    scrollWrapper.innerHTML = "";
+
+    for (let i = 0; i < 3; i++) {
+      originalGroups.forEach((group) => {
+        scrollWrapper.appendChild(group.cloneNode(true));
+      });
     }
-  }
 
-  checkWidth();
-  window.addEventListener("resize", checkWidth);
+    const existingStyle = document.getElementById("carousel-animation");
+    if (existingStyle) {
+      existingStyle.remove();
+    }
+
+    let scrollPosition = 0;
+    const speed = 1.5;
+    let isPaused = false;
+
+    function getGroupWidth() {
+      const firstGroup = scrollWrapper.querySelector(".scroll-group");
+      if (firstGroup) {
+        const img = firstGroup.querySelector("img");
+        const style = window.getComputedStyle(img);
+        const marginLeft = parseInt(style.marginLeft);
+        const marginRight = parseInt(style.marginRight);
+        return img.offsetWidth + marginLeft + marginRight;
+      }
+      return 200;
+    }
+
+    function animateScroll() {
+      if (!isPaused) {
+        scrollPosition += speed;
+        const groupWidth = getGroupWidth();
+        const totalWidth = groupWidth * originalGroups.length;
+
+        if (scrollPosition >= totalWidth) {
+          scrollPosition = 0;
+        }
+
+        scrollWrapper.style.transform = `translateX(-${scrollPosition}px)`;
+      }
+      requestAnimationFrame(animateScroll);
+    }
+
+    scrollWrapper.addEventListener("mouseenter", () => {
+      isPaused = true;
+    });
+
+    scrollWrapper.addEventListener("mouseleave", () => {
+      isPaused = false;
+    });
+
+    animateScroll();
+  }
 });
 
 var swiper = new Swiper(".mySwiper-quem-somos", {
